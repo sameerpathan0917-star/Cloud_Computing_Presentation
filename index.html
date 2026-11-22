@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An animated school presentation explaining cloud computing.">
+  <title>Cloud Computing Presentation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="presentation" id="presentation" aria-label="Cloud computing presentation">
+    <section class="opening-screen" id="opening-screen" aria-labelledby="presentation-title">
+      <div class="opening-visual" aria-hidden="true">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="cloud-emblem">
+          <span class="cloud-emblem-icon">☁</span>
+        </div>
+      </div>
+
+      <div class="opening-content" data-reveal="fade">
+        <p class="eyebrow" data-reveal="slide-up">Digital Technology Documentary</p>
+        <h1 id="presentation-title" data-reveal="slide-up">CLOUD COMPUTING</h1>
+        <p class="opening-subtitle" data-reveal="slide-up">
+          What happens when your digital world moves beyond your device?
+        </p>
+        <button class="start-button" id="start-button" type="button" data-action="start">
+          <span>Start Presentation</span>
+          <span aria-hidden="true">→</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="presentation-stage" id="presentation-stage" aria-live="polite" aria-label="Presentation slides" hidden>
+      <div class="ambient-background" aria-hidden="true">
+        <div class="grid-overlay"></div>
+        <div class="glow glow-one"></div>
+        <div class="glow glow-two"></div>
+      </div>
+
+      <div class="slide-track" id="slide-track">
+        <article class="slide slide-introduction is-active" data-slide="1" data-duration="7500" aria-label="Slide 1: Introduction to Cloud Computing">
+          <header class="slide-header" data-reveal="slide-down">
+            <p class="slide-kicker">01 / Foundation</p>
+            <h2>Introduction to Cloud Computing</h2>
+          </header>
+
+          <div class="slide-layout introduction-layout">
+            <div class="slide-copy" data-reveal="slide-right">
+              <p class="definition">
+                Computing services—servers, storage and software—delivered through the internet.
+              </p>
+              <p class="topic-definition">Cloud computing is internet-based access to shared computing resources.</p>
+              <p>Use resources on demand—without owning the infrastructure.</p>
+            </div>
+
+            <div class="cloud-network" data-reveal="scale" aria-label="Devices connected to a central cloud">
+              <div class="network-cloud" aria-hidden="true">☁</div>
+              <div class="network-device device-phone">Phone</div>
+              <div class="network-device device-laptop">Laptop</div>
+              <div class="network-device device-server">Server</div>
+              <span class="network-line line-phone" aria-hidden="true"></span>
+              <span class="network-line line-laptop" aria-hidden="true"></span>
+              <span class="network-line line-server" aria-hidden="true"></span>
+            </div>
+
+            <ul class="feature-list" aria-label="Key features" data-reveal="slide-up">
+              <li><span>01</span> On-demand access</li>
+              <li><span>02</span> Internet delivery</li>
+              <li><span>03</span> Shared resources</li>
+              <li><span>04</span> Pay-as-used</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="slide slide-how-it-works" data-slide="2" data-duration="7500" aria-label="Slide 2: How Cloud Computing Works">
+          <header class="slide-header" data-reveal="slide-down">
+            <p class="slide-kicker">02 / Process</p>
+            <h2>How Cloud Computing Works</h2>
+          </header>
+
+          <div class="process-diagram" data-reveal="scale" aria-label="How a cloud request works">
+            <div class="process-step" data-reveal="slide-up">
+              <span class="step-number">1</span>
+              <div class="step-icon" aria-hidden="true">▣</div>
+              <h3>User</h3>
+              <p>Requests</p>
+              <p class="topic-definition">The person or device requesting a service.</p>
+            </div>
+            <div class="process-arrow" aria-hidden="true"><span></span></div>
+            <div class="process-step" data-reveal="slide-up">
+              <span class="step-number">2</span>
+              <div class="step-icon" aria-hidden="true">⌁</div>
+              <h3>Internet</h3>
+              <p>Connects</p>
+              <p class="topic-definition">The network that carries the request.</p>
+            </div>
+            <div class="process-arrow" aria-hidden="true"><span></span></div>
+            <div class="process-step" data-reveal="slide-up">
+              <span class="step-number">3</span>
+              <div class="step-icon" aria-hidden="true">☁</div>
+              <h3>Cloud Platform</h3>
+              <p>Allocates</p>
+              <p class="topic-definition">Virtual infrastructure that provides resources.</p>
+            </div>
+            <div class="process-arrow" aria-hidden="true"><span></span></div>
+            <div class="process-step" data-reveal="slide-up">
+              <span class="step-number">4</span>
+              <div class="step-icon" aria-hidden="true">▦</div>
+              <h3>Service</h3>
+              <p>Returns</p>
+              <p class="topic-definition">The requested result delivered to the user.</p>
+            </div>
+          </div>
+
+          <div class="concept-strip" data-reveal="slide-up">
+            <span>Internet connection</span>
+            <span>Virtualisation — flexible virtual hardware</span>
+            <span>Resource allocation — assigns available resources</span>
+            <span>Service delivery</span>
+          </div>
+        </article>
+
+        <article class="slide slide-types" data-slide="3" data-duration="7500" aria-label="Slide 3: Types of Cloud Computing">
+          <header class="slide-header" data-reveal="slide-down">
+            <p class="slide-kicker">03 / Deployment</p>
+            <h2>Types of Cloud Computing</h2>
+          </header>
+
+          <div class="cloud-type-grid">
+            <article class="type-card" data-reveal="slide-up">
+              <div class="type-icon" aria-hidden="true">P</div>
+              <p class="type-label">Public</p>
+              <h3>Public Cloud</h3>
+              <p>Provider-shared infrastructure.<span class="topic-definition"> A public cloud provides resources to many users online.</span></p>
+              <ul>
+                <li>Cost-efficient</li>
+                <li>Highly scalable</li>
+              </ul>
+            </article>
+
+            <article class="type-card" data-reveal="slide-up">
+              <div class="type-icon" aria-hidden="true">V</div>
+              <p class="type-label">Private</p>
+              <h3>Private Cloud</h3>
+              <p>Infrastructure for one organisation.<span class="topic-definition"> A private cloud is dedicated to a single organisation.</span></p>
+              <ul>
+                <li>Greater control</li>
+                <li>Custom security</li>
+              </ul>
+            </article>
+
+            <article class="type-card" data-reveal="slide-up">
+              <div class="type-icon" aria-hidden="true">H</div>
+              <p class="type-label">Hybrid</p>
+              <h3>Hybrid Cloud</h3>
+              <p>Public and private environments together.<span class="topic-definition"> A hybrid cloud combines public and private environments.</span></p>
+              <ul>
+                <li>Flexible</li>
+                <li>Balanced control</li>
+              </ul>
+            </article>
+          </div>
+        </article>
+
+        <article class="slide slide-services" data-slide="4" data-duration="7500" aria-label="Slide 4: Cloud Computing Services">
+          <header class="slide-header" data-reveal="slide-down">
+            <p class="slide-kicker">04 / Service Models</p>
+            <h2>Cloud Computing Services</h2>
+          </header>
+
+          <div class="services-layout">
+            <div class="service-stack" data-reveal="scale" aria-label="IaaS, PaaS and SaaS service stack">
+              <div class="service-layer service-saas" data-reveal="slide-right">
+                <div>
+                  <strong>SaaS</strong>
+                  <span>Software as a Service — ready-made software delivered through the internet.</span>
+                </div>
+                <p>Ready-to-use software</p>
+              </div>
+              <div class="service-layer service-paas" data-reveal="slide-right">
+                <div>
+                  <strong>PaaS</strong>
+                  <span>Platform as a Service — tools for creating and deploying applications.</span>
+                </div>
+                <p>Build and deploy apps</p>
+              </div>
+              <div class="service-layer service-iaas" data-reveal="slide-right">
+                <div>
+                  <strong>IaaS</strong>
+                  <span>Infrastructure as a Service — online access to virtual servers and storage.</span>
+                </div>
+                <p>Servers and storage</p>
+              </div>
+            </div>
+
+            <div class="service-examples" data-reveal="slide-left">
+              <article>
+                <p>IaaS</p>
+                <h3>AWS EC2</h3>
+                <span>Server infrastructure</span>
+              </article>
+              <article>
+                <p>PaaS</p>
+                <h3>Google App Engine</h3>
+                <span>Application platform</span>
+              </article>
+              <article>
+                <p>SaaS</p>
+                <h3>Microsoft 365</h3>
+                <span>Cloud software</span>
+              </article>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide slide-uses" data-slide="5" data-duration="7500" aria-label="Slide 5: Uses of Cloud Computing">
+          <header class="slide-header" data-reveal="slide-down">
+            <p class="slide-kicker">05 / Everyday Impact</p>
+            <h2>Uses of Cloud Computing</h2>
+          </header>
+
+          <div class="uses-layout">
+            <div class="uses-cloud" data-reveal="scale" aria-label="Cloud connected to common uses">
+              <div class="uses-cloud-icon" aria-hidden="true">☁</div>
+              <p>Connected Services</p>
+            </div>
+
+            <div class="use-grid">
+              <article data-reveal="slide-up">
+                <span aria-hidden="true">▰</span>
+                <h3>Storage</h3>
+                <p>Google Drive</p>
+              </article>
+              <article data-reveal="slide-up">
+                <span aria-hidden="true">▶</span>
+                <h3>Streaming</h3>
+                <p>Netflix</p>
+              </article>
+              <article data-reveal="slide-up">
+                <span aria-hidden="true">◫</span>
+                <h3>Education</h3>
+                <p>Online classes</p>
+              </article>
+              <article data-reveal="slide-up">
+                <span aria-hidden="true">+</span>
+                <h3>Healthcare</h3>
+                <p>Digital records</p>
+              </article>
+              <article data-reveal="slide-up">
+                <span aria-hidden="true">✦</span>
+                <h3>Artificial Intelligence</h3>
+                <p>Cloud tools</p>
+              </article>
+              <article data-reveal="slide-up">
+                <span aria-hidden="true">◉</span>
+                <h3>Business</h3>
+                <p>Video collaboration</p>
+              </article>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide slide-advantages" data-slide="6" data-duration="7500" aria-label="Slide 6: Advantages and Disadvantages">
+          <header class="slide-header" data-reveal="slide-down">
+            <p class="slide-kicker">06 / Evaluation</p>
+            <h2>Advantages and Disadvantages</h2>
+          </header>
+
+          <div class="comparison-grid">
+            <section class="comparison-panel advantages-panel" data-reveal="slide-right" aria-labelledby="advantages-title">
+              <div class="panel-heading">
+                <span aria-hidden="true">✓</span>
+                <h3 id="advantages-title">Advantages</h3>
+              </div>
+              <ul>
+                <li>Lower costs</li>
+                <li>Easy scaling</li>
+                <li>Anywhere access</li>
+                <li>Automatic updates</li>
+                <li>Data backup</li>
+              </ul>
+            </section>
+
+            <section class="comparison-panel disadvantages-panel" data-reveal="slide-left" aria-labelledby="disadvantages-title">
+              <div class="panel-heading">
+                <span aria-hidden="true">!</span>
+                <h3 id="disadvantages-title">Disadvantages</h3>
+              </div>
+              <ul>
+                <li>Internet required</li>
+                <li>Privacy risks</li>
+                <li>Recurring costs</li>
+                <li>Less control</li>
+                <li>Possible outages</li>
+              </ul>
+            </section>
+          </div>
+        </article>
+
+        <article class="slide slide-security" data-slide="7" data-duration="7500" aria-label="Slide 7: Security and Challenges">
+          <header class="slide-header" data-reveal="slide-down">
+            <p class="slide-kicker">07 / Protection</p>
+            <h2>Security and Challenges</h2>
+          </header>
+
+          <div class="security-layout">
+            <div class="security-diagram" data-reveal="scale" aria-label="Cloud security protection areas">
+              <div class="security-core">
+                <span aria-hidden="true">◇</span>
+                <p>Protected Cloud</p>
+              </div>
+              <div class="security-node node-encryption"><span>Encryption</span><small class="topic-definition"> — protects data</small></div>
+              <div class="security-node node-authentication"><span>Login Security</span><small class="topic-definition"> — verifies access</small></div>
+              <div class="security-node node-backup"><span>Backup</span><small class="topic-definition"> — protects stored copies</small></div>
+              <div class="security-node node-monitoring"><span>Monitoring</span><small class="topic-definition"> — tracks activity</small></div>
+            </div>
+
+            <div class="security-content" data-reveal="slide-left">
+              <section>
+                <h3>Shared Responsibility</h3>
+                <p><strong>Provider:</strong> Protect infrastructure.</p>
+                <p><strong>User:</strong> Protect accounts and data.</p>
+                <p class="topic-definition">Shared responsibility divides cloud protection between the provider and the user.</p>
+              </section>
+              <ul class="security-list">
+                <li>Multi-factor login</li>
+                <li>Strong passwords</li>
+                <li>Regular backups</li>
+                <li>Limited access</li>
+                <li>Software updates</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide slide-conclusion" data-slide="8" data-duration="7500" aria-label="Slide 8: Conclusion">
+          <header class="slide-header" data-reveal="slide-down">
+            <p class="slide-kicker">08 / Future Trends</p>
+            <h2>The Future of Cloud Computing</h2>
+          </header>
+
+          <div class="future-grid">
+            <article class="future-card" data-reveal="slide-up">
+              <span class="future-icon" aria-hidden="true">✦</span>
+              <h3>AI Integration</h3>
+              <p>Cloud platforms provide powerful computing resources for Artificial Intelligence.</p>
+            </article>
+
+            <article class="future-card" data-reveal="slide-up">
+              <span class="future-icon" aria-hidden="true">◉</span>
+              <h3>Edge Computing</h3>
+              <p>Data is processed closer to users and devices for faster responses.</p>
+            </article>
+
+            <article class="future-card" data-reveal="slide-up">
+              <span class="future-icon" aria-hidden="true">⌁</span>
+              <h3>Serverless Computing</h3>
+              <p>Developers run applications without managing physical servers.</p>
+            </article>
+
+            <article class="future-card" data-reveal="slide-up">
+              <span class="future-icon" aria-hidden="true">◇</span>
+              <h3>Better Security</h3>
+              <p>Advanced encryption and security technologies protect cloud data.</p>
+            </article>
+
+            <article class="future-card" data-reveal="slide-up">
+              <span class="future-icon" aria-hidden="true">♧</span>
+              <h3>Green Cloud Computing</h3>
+              <p>Energy-efficient data centres reduce environmental impact.</p>
+            </article>
+          </div>
+
+          <p class="future-conclusion" data-reveal="fade">
+            Cloud computing is continuously evolving and shaping the future of digital technology.
+          </p>
+        </article>
+
+        <article class="slide slide-final-thankyou" data-slide="9" data-duration="7500" aria-label="Slide 9: Thank You">
+          <div class="final-thankyou-background" aria-hidden="true">
+            <div class="digital-grid"></div>
+            <div class="final-cloud final-cloud-left">☁</div>
+            <div class="final-cloud final-cloud-right">☁</div>
+            <div class="network-orbit orbit-outer"><span></span><span></span><span></span></div>
+            <div class="network-orbit orbit-inner"><span></span><span></span></div>
+            <div class="digital-particle particle-one"></div>
+            <div class="digital-particle particle-two"></div>
+            <div class="digital-particle particle-three"></div>
+            <div class="digital-particle particle-four"></div>
+          </div>
+
+          <div class="final-thankyou-content">
+            <p class="final-kicker" data-reveal="slide-down">Cloud Computing Presentation</p>
+            <h2 class="final-thankyou-title" data-reveal="slide-up" data-thankyou-reveal>THANK YOU!</h2>
+            <p class="final-thankyou-line" data-reveal="fade">Thank you for your time and attention.</p>
+          </div>
+        </article>
+      </div>
+
+      <nav class="presentation-controls" aria-label="Presentation controls">
+        <button class="control-button playback-button" id="playback-button" type="button" data-action="pause" aria-label="Pause presentation">
+          <span class="playback-icon" aria-hidden="true">Ⅱ</span>
+          <span class="control-label" id="playback-label">Pause</span>
+        </button>
+
+        <button class="control-button" id="previous-button" type="button" data-action="previous" aria-label="Previous slide">
+          <span aria-hidden="true">←</span>
+          <span class="control-label">Previous</span>
+        </button>
+
+        <button class="control-button" id="replay-button" type="button" data-action="replay" aria-label="Replay presentation">
+          <span aria-hidden="true">↺</span>
+          <span class="control-label">Replay</span>
+        </button>
+
+        <button class="control-button" id="next-button" type="button" data-action="next" aria-label="Next slide">
+          <span aria-hidden="true">→</span>
+          <span class="control-label">Next</span>
+        </button>
+
+        <div class="slide-status" aria-live="polite">
+          <span class="slide-number" id="slide-number">01</span>
+          <span class="slide-status-divider" aria-hidden="true">/</span>
+          <span class="slide-total">09</span>
+        </div>
+
+        <button class="control-button fullscreen-button" id="fullscreen-button" type="button" data-action="fullscreen" aria-label="Enter full screen">
+          <span aria-hidden="true">⛶</span>
+          <span class="control-label">Full Screen</span>
+        </button>
+      </nav>
+
+      <div class="progress-track" id="progress-track" role="progressbar" aria-label="Presentation progress" aria-valuemin="1" aria-valuemax="9" aria-valuenow="1">
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
